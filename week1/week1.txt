@@ -1,0 +1,56 @@
+
+
+1-
+   public void metodoClick(View v){
+        Toast.makeText(this, "Carlao Mensajito", Toast.LENGTH_SHORT).show();
+    }
+
+	OnClick Button
+
+2- 
+private EditText edtn1, edtn2;
+private TextView tv1;
+
+protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        edtn1 = findViewById(R.id.edtn1);
+        edtn2 = findViewById(R.id.edtn2);
+        tv1 = findViewById(R.id.tv1);
+    }
+public void Sumar(View v){
+        edtn1.setText("");
+        edtn2.setText("");
+
+        int v1 = Integer.parseInt(edtn1.getText().toString());
+        int v2 = Integer.parseInt(edtn2.getText().toString());
+
+        int result = v1+v2;
+
+        tv1.setText("La suma es: "+result);
+
+
+    }
+3- radio button
+	radio group button
+	radio button
+	
+	private RadioButton rb1, rb2;
+ 	rb1 = findViewById(R.id.rb1);
+	rb1.isChecked()
+
+3- check box
+	private CheckBox cb1, cb2;
+  	cb1 = findViewById(R.id.cb1);
+        cb2 = findViewById(R.id.cb2);
+        cb1.isChecked()
+4- Switch
+	like a checkbox
+
+5- ImageButton ImageView
+	res/drawable	images
+
+	ImageView iv1
+
+	iv1.setImageResource(R.drawable.img1);
